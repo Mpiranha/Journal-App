@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/writingadit"
+    android:id="@+id/activity_main"
+    tools:context="com.example.android.myjournal.MainActivity">
+
+    <TextView
+        android:id="@+id/my-tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="161dp"
+        android:text="@string/my_text"
+        android:textAllCaps="true"
+        android:textColor="#F05829"
+        android:textSize="70sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/journal-tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/my-tv"
+        android:layout_centerHorizontal="true"
+        android:text="@string/journal_text"
+        android:textAllCaps="true"
+        android:textColor="#F05829"
+        android:textSize="70sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/signin-tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/journal-tv"
+        android:layout_alignStart="@+id/journal-tv"
+        android:layout_below="@+id/journal-tv"
+        android:layout_marginLeft="13dp"
+        android:layout_marginStart="13dp"
+        android:text="@string/sign_in_text"
+        android:textAllCaps="false"
+        android:textColor="#2b2928"
+        android:textSize="30sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/with-tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/signin-tv"
+        android:layout_alignBottom="@+id/signin-tv"
+        android:layout_marginLeft="20dp"
+        android:layout_marginStart="20dp"
+        android:layout_toEndOf="@+id/signin-tv"
+        android:layout_toRightOf="@+id/signin-tv"
+        android:text="@string/with_text"
+        android:textAllCaps="false"
+        android:textColor="#262423"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <com.google.android.gms.common.SignInButton
+        android:id="@+id/sign_in_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/signin-tv"
+        android:layout_marginTop="16dp"
+        android:layout_centerHorizontal="true"/>
+
+
+
+</RelativeLayout>
